@@ -1,0 +1,9 @@
+<h1>Member List</h1>
+<ul>
+  {% for member in members %}
+  <li>
+    {{ member.first_name }} {{ member.last_name }} - Joined on {{
+    member.membership_date }}
+  </li>
+  {% endfor %}
+</ul>
